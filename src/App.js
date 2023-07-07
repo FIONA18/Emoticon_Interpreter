@@ -26,7 +26,11 @@ export default function App() {
   return (
     <div className="App">
       <h1>Inside Out!!!!</h1>
-      <input onChange={onemojichanged} maxLength="2"></input>
+      <input
+        placeholder="Enter your Emoji"
+        onChange={onemojichanged}
+        maxLength="2"
+      ></input>
       <h2>{meaning}</h2>
       <ul>
         {emojiarray.map((emoji) => {
